@@ -12,6 +12,7 @@ function Services() {
   return (
     <>
       <Accordion>
+        {/* Accordion 1 */}
         <AccordionItem>
           <AccordionButton>
             <Box flex="1" textAlign="left">
@@ -20,20 +21,19 @@ function Services() {
             <AccordionIcon />
           </AccordionButton>
           <AccordionPanel>
-            We develop and maintain custom software solutions for your business,
-            contact us today.
+            We develop custom software solutions to meet your needs.
           </AccordionPanel>
         </AccordionItem>
+        {/* Accordion 2 */}
         <AccordionItem>
           <AccordionButton>
             <Box flex="1" textAlign="left">
-              Web Hosting
+              Software Development
             </Box>
             <AccordionIcon />
           </AccordionButton>
           <AccordionPanel>
-            We develop and maintain custom software solutions for your business,
-            contact us today.
+            We develop custom software solutions to meet your needs.
           </AccordionPanel>
         </AccordionItem>
       </Accordion>
