@@ -14,7 +14,9 @@ function Services() {
       <Accordion defaultIndex={[0]} allowMultiple>
         {/* Accordion 1 */}
         <AccordionItem>
-          <AccordionButton>
+          <AccordionButton
+            _expanded={{ backgroundColor: 'tomato', color: 'white' }}
+          >
             <Box flex="1" textAlign="left">
               Software Development
             </Box>
@@ -26,7 +28,9 @@ function Services() {
         </AccordionItem>
         {/* Accordion 2 */}
         <AccordionItem>
-          <AccordionButton>
+          <AccordionButton
+            _expanded={{ backgroundColor: 'teal', color: 'white' }}
+          >
             <Box flex="1" textAlign="left">
               Software Development
             </Box>
