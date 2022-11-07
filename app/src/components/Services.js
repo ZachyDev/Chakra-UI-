@@ -11,12 +11,37 @@ import {
   Tab,
   TabPanels,
   TabPanel,
+  Alert,
+  AlertIcon,
+  AlertTitle,
+  AlertDescription,
 } from '@chakra-ui/react'
 
 function Services() {
   return (
     <>
+      {/* Alert component */}
+      {/* <Alert status="error">
+        <AlertIcon />
+        <AlertTitle>Your browser is outdated</AlertTitle>
+        <AlertDescription>
+          Your Chajra UI experience may be degraded
+        </AlertDescription>
+      </Alert> */}
+      <Alert status="success" variant="top-accent">
+        <AlertIcon />
+        <AlertTitle>Data uploaded to the server!</AlertTitle>
+      </Alert>
+      {/* <Alert status="warning">
+        <AlertIcon />
+        <AlertTitle>Your account is about to expire</AlertTitle>
+      </Alert>
+      <Alert status="info">
+        <AlertIcon />
+        <AlertTitle>We are going live on 30th, Get ready!</AlertTitle>
+      </Alert> */}
       {/* Tabs component */}
+
       <Tabs size="lg" isFitted variant="enclosed">
         <TabList>
           <Tab _selected={{ bg: 'tomato', color: 'fff' }}>Users</Tab>
@@ -57,6 +82,29 @@ function Services() {
           </AccordionPanel>
         </AccordionItem>
       </Accordion>
+
+      {/* Alert - composition */}
+      <Alert
+        status="success"
+        display="flex"
+        flexDirection="column"
+        textAlign="center"
+        alignItems="center"
+        justifyContent="center"
+        height="200px"
+        width="500px"
+        margin="0 auto"
+        variant="top-accent"
+      >
+        <AlertIcon boxSize="40px" />
+        <AlertTitle fontSize="lg" mb="2">
+          Application submitted!
+        </AlertTitle>
+        <AlertDescription maxWidth="sm">
+          Thanks for submitting your application. Our team will get back to you
+          soon.
+        </AlertDescription>
+      </Alert>
     </>
   )
 }
