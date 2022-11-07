@@ -6,11 +6,27 @@ import {
   AccordionIcon,
   AccordionPanel,
   Box,
+  Tabs,
+  TabList,
+  Tab,
+  TabPanels,
+  TabPanel,
 } from '@chakra-ui/react'
 
 function Services() {
   return (
     <>
+      {/* Tabs component */}
+      <Tabs>
+        <TabList>
+          <Tab>Users</Tab>
+          <Tab>Admins</Tab>
+        </TabList>
+        <TabPanels>
+          <TabPanel>Users section</TabPanel>
+          <TabPanel>Admins sections</TabPanel>
+        </TabPanels>
+      </Tabs>
       <Accordion defaultIndex={[0]} allowMultiple>
         {/* Accordion 1 */}
         <AccordionItem>
