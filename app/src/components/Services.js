@@ -11,7 +11,7 @@ import {
 function Services() {
   return (
     <>
-      <Accordion>
+      <Accordion defaultIndex={[0]} allowMultiple>
         {/* Accordion 1 */}
         <AccordionItem>
           <AccordionButton>
