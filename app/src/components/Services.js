@@ -17,10 +17,10 @@ function Services() {
   return (
     <>
       {/* Tabs component */}
-      <Tabs>
+      <Tabs size="lg" isFitted variant="enclosed">
         <TabList>
-          <Tab>Users</Tab>
-          <Tab>Admins</Tab>
+          <Tab _selected={{ bg: 'tomato', color: 'fff' }}>Users</Tab>
+          <Tab _selected={{ bg: 'blue.400', color: 'fff' }}>Admins</Tab>
         </TabList>
         <TabPanels>
           <TabPanel>Users section</TabPanel>
